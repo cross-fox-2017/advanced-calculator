@@ -1,6 +1,6 @@
 "use strict";
 
- export default class Calculator {
+ export class Calculator {
   //write your code here
   constructor(num1,num2,sqr = 2,result){
     this.num1 =num1;
@@ -35,7 +35,7 @@
     this.result = Math.sqrt(num1);
     return this.result;
   }
-  getPi(num1){
+  getPi(){
     const Pi = 3.14;
     return this.result = Pi;
   }
@@ -45,7 +45,8 @@
   // }
 }
 
-
+// let bill = new Calculator();
+// console.log(bill.setPenjumlahan(2,3));
 //console.log(bill.getJumlah());
 
 /** note : you can use several features from ecmascript, such as:
