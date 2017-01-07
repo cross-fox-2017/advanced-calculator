@@ -25,6 +25,10 @@ export class Calculator {
     this._value = Math.pow(this._value,b)
     return this
   }
+  sqrt(input){
+    this._value = Math.sqrt(this._value)
+    return this
+  }
   result(){
     return this._value
   }
