@@ -21,14 +21,15 @@ export class Calculator {
     this._value /= input
     return this
   }
+  pow(input){
+    this._value = Math.pow(this._value,b)
+    return this
+  }
   result(){
     return this._value
   }
 
 }
-var execute = new Calculator()
-
-console.log(execute.add(8).divide(3).result());
 
 
 /** note : you can use several features from ecmascript, such as:
