@@ -29,6 +29,10 @@ export class Calculator {
     this._value = Math.sqrt(this._value)
     return this
   }
+  circle(){
+    this._value = (0,25 * Math.PI * Math.pow(this._value, 2)) //luas lingkaran
+    return this
+  }
   result(){
     return this._value
   }
