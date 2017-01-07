@@ -1,6 +1,6 @@
 "use strict";
 
-class Calculator {
+export class Calculator {
   //write your code here
   constructor(value = 1){
     this._value = value
@@ -21,27 +21,15 @@ class Calculator {
     this._value /= input
     return this
   }
-  pow(input){
-    this._value = Math.pow(this._value,b)
-    return this
-  }
-  sqrt(input){
-    this._value = Math.sqrt(this._value)
-    return this
-  }
-  circle(){
-    this._value = (0,25 * Math.PI * Math.pow(this._value, 2)) //luas lingkaran
-    return this
-  }
   result(){
     return this._value
   }
 
 }
-
-let execute = new Calculator()
+var execute = new Calculator()
 
 console.log(execute.add(8).divide(3).result());
+
 
 /** note : you can use several features from ecmascript, such as:
 * - Classes
