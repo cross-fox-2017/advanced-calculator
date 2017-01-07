@@ -26,6 +26,9 @@ export class Calculator {
   }
 
 }
+var execute = new Calculator()
+
+console.log(execute.add(8).divide(3).result());
 
 
 /** note : you can use several features from ecmascript, such as:
