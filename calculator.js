@@ -13,6 +13,14 @@ class Calculator {
     this._value -= input
     return this
   }
+  multiplication(input){
+    this._value *= input
+    return this
+  }
+  divide(input){
+    this._value /= input
+    return this
+  }
   result(){
     return this._value
   }
