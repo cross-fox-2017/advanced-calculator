@@ -1,7 +1,38 @@
 "use strict";
 
 export class Calculator {
-  //write your code here
+  constructor(angka1){
+    this.nilai = angka1 || 0;
+  }
+
+  jumlah(angka2){
+    this.nilai += angka2
+    return this;
+  }
+  kurang(angka3){
+    this.nilai -= angka3
+    return this;
+  }
+  kali(angka4){
+    this.nilai *= angka4
+    return this;
+  }
+  bagi(angka5){
+    this.nilai /= angka5
+    return this;
+  }
+  pangkat(angka6){
+    this.nilai = Math.pow(this.nilai, angka6);
+    return this;
+  }
+  akar(){
+    this.nilai = Math.sqrt(this.nilai);
+    return this;
+  }
+  lingkaran(){
+    this.nilai = Math.pow(this.nilai, 2) * 3.14;
+    return this;
+  }
 }
 
 /** note : you can use several features from ecmascript, such as:
