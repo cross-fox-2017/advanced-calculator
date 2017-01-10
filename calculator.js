@@ -26,11 +26,11 @@ export class Calculator {
     return this;
   }
   akar(){
-    this.nilai = Math.sqrt(this.result);
+    this.nilai = Math.sqrt(this.nilai);
     return this;
   }
   lingkaran(){
-    this.nilai = Math.pow(this.result, 2) * 3.14;
+    this.nilai = Math.pow(this.nilai, 2) * 3.14;
     return this;
   }
 }
