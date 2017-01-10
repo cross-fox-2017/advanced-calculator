@@ -1,30 +1,37 @@
 "use strict";
 
 export class Calculator {
-  constructor(angka1 = 0){
-    this.nilai = angka1;
+  constructor(angka1){
+    this.nilai = angka1 || 0;
   }
 
   jumlah(angka2){
-    return this.nilai += angka2
+    this.nilai += angka2
+    return this;
   }
   kurang(angka3){
-    return this.nilai -= angka3
+    this.nilai -= angka3
+    return this;
   }
   kali(angka4){
-    return this.nilai *= angka4
+    this.nilai *= angka4
+    return this;
   }
   bagi(angka5){
-    return this.nilai /= angka5
+    this.nilai /= angka5
+    return this;
   }
   pangkat(angka6){
-    return this.nilai = Math.pow(this.nilai, angka6);
+    this.nilai = Math.pow(this.nilai, angka6);
+    return this;
   }
-  akar(angka8){
-    return this.nilai = Math.sqrt(this.result);
+  akar(){
+    this.nilai = Math.sqrt(this.result);
+    return this;
   }
-  lingkaran(angka9){
-    return this.nilai = Math.pow(this.result, 2) * 3.14
+  lingkaran(){
+    this.nilai = Math.pow(this.result, 2) * 3.14;
+    return this;
   }
 }
 
